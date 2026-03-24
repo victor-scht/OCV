@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.17)  24 MAR 2026 11:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.17)  24 MAR 2026 11:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1549,17 +1549,21 @@ Package pdftex.def Info: ./figures/model.png  used on input line 217.
 
 {/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [14
 
-] [15
-
 ]
-<figures/bang.png, id=189, 687.56876pt x 686.565pt>
+<figures/bang.png, id=182, 687.56876pt x 686.565pt>
 File: figures/bang.png Graphic file (type png)
 <use figures/bang.png>
-Package pdftex.def Info: figures/bang.png  used on input line 428.
+Package pdftex.def Info: figures/bang.png  used on input line 431.
 (pdftex.def)             Requested size: 169.29684pt x 169.04274pt.
- [16
 
- <./figures/bang.png>] [17
+Overfull \vbox (5.75508pt too high) detected at line 431
+ []
+
+[15
+
+ <./figures/bang.png>] [16
+
+] [17
 
 ] [18
 
@@ -1573,95 +1577,93 @@ Package pdftex.def Info: figures/bang.png  used on input line 428.
 
 ] [23
 
-] [24
-
 ]
-<./figures/sac_2d_controls.png, id=256, 650.43pt x 289.08pt>
+<./figures/sac_2d_controls.png, id=249, 650.43pt x 289.08pt>
 File: ./figures/sac_2d_controls.png Graphic file (type png)
 <use ./figures/sac_2d_controls.png>
-Package pdftex.def Info: ./figures/sac_2d_controls.png  used on input line 556.
+Package pdftex.def Info: ./figures/sac_2d_controls.png  used on input line 559.
 (pdftex.def)             Requested size: 314.40001pt x 139.73605pt.
- [25
+ [24
 
  <./figures/sac_2d_controls.png>]
-<./figures/sac_2d_phase_controls.png, id=267, 361.35pt x 361.35pt>
+<./figures/sac_2d_phase_controls.png, id=259, 361.35pt x 361.35pt>
 File: ./figures/sac_2d_phase_controls.png Graphic file (type png)
 <use ./figures/sac_2d_phase_controls.png>
-Package pdftex.def Info: ./figures/sac_2d_phase_controls.png  used on input line 582.
+Package pdftex.def Info: ./figures/sac_2d_phase_controls.png  used on input line 585.
 (pdftex.def)             Requested size: 181.38632pt x 181.38583pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.582 \end{frame}
-                  [26
+l.585 \end{frame}
+                  [25
 
  <./figures/sac_2d_phase_controls.png>]
-<./figures/no_control_compartments.png, id=276, 650.43pt x 361.35pt>
+<./figures/no_control_compartments.png, id=269, 650.43pt x 361.35pt>
 File: ./figures/no_control_compartments.png Graphic file (type png)
 <use ./figures/no_control_compartments.png>
-Package pdftex.def Info: ./figures/no_control_compartments.png  used on input line 595.
+Package pdftex.def Info: ./figures/no_control_compartments.png  used on input line 598.
 (pdftex.def)             Requested size: 217.66211pt x 120.92204pt.
-<./figures/no_control_variants.png, id=277, 722.7pt x 505.89pt>
+<./figures/no_control_variants.png, id=270, 722.7pt x 505.89pt>
 File: ./figures/no_control_variants.png Graphic file (type png)
 <use ./figures/no_control_variants.png>
-Package pdftex.def Info: ./figures/no_control_variants.png  used on input line 595.
+Package pdftex.def Info: ./figures/no_control_variants.png  used on input line 598.
+(pdftex.def)             Requested size: 217.66211pt x 152.36255pt.
+ [26
+
+ <./figures/no_control_compartments.png> <./figures/no_control_variants.png>]
+<./figures/full_vaccination_no_npi_compartments.png, id=280, 650.43pt x 361.35pt>
+File: ./figures/full_vaccination_no_npi_compartments.png Graphic file (type png)
+<use ./figures/full_vaccination_no_npi_compartments.png>
+Package pdftex.def Info: ./figures/full_vaccination_no_npi_compartments.png  used on input line 612.
+(pdftex.def)             Requested size: 217.66211pt x 120.92204pt.
+<./figures/full_vaccination_no_npi_variants.png, id=281, 722.7pt x 505.89pt>
+File: ./figures/full_vaccination_no_npi_variants.png Graphic file (type png)
+<use ./figures/full_vaccination_no_npi_variants.png>
+Package pdftex.def Info: ./figures/full_vaccination_no_npi_variants.png  used on input line 612.
 (pdftex.def)             Requested size: 217.66211pt x 152.36255pt.
  [27
 
- <./figures/no_control_compartments.png> <./figures/no_control_variants.png>]
-<./figures/full_vaccination_no_npi_compartments.png, id=287, 650.43pt x 361.35pt>
-File: ./figures/full_vaccination_no_npi_compartments.png Graphic file (type png)
-<use ./figures/full_vaccination_no_npi_compartments.png>
-Package pdftex.def Info: ./figures/full_vaccination_no_npi_compartments.png  used on input line 609.
+ <./figures/full_vaccination_no_npi_compartments.png> <./figures/full_vaccination_no_npi_variants.png>]
+<./figures/full_vaccination_initial_npi_compartments.png, id=291, 650.43pt x 361.35pt>
+File: ./figures/full_vaccination_initial_npi_compartments.png Graphic file (type png)
+<use ./figures/full_vaccination_initial_npi_compartments.png>
+Package pdftex.def Info: ./figures/full_vaccination_initial_npi_compartments.png  used on input line 626.
 (pdftex.def)             Requested size: 217.66211pt x 120.92204pt.
-<./figures/full_vaccination_no_npi_variants.png, id=288, 722.7pt x 505.89pt>
-File: ./figures/full_vaccination_no_npi_variants.png Graphic file (type png)
-<use ./figures/full_vaccination_no_npi_variants.png>
-Package pdftex.def Info: ./figures/full_vaccination_no_npi_variants.png  used on input line 609.
+<./figures/full_vaccination_initial_npi_variants.png, id=292, 722.7pt x 505.89pt>
+File: ./figures/full_vaccination_initial_npi_variants.png Graphic file (type png)
+<use ./figures/full_vaccination_initial_npi_variants.png>
+Package pdftex.def Info: ./figures/full_vaccination_initial_npi_variants.png  used on input line 626.
 (pdftex.def)             Requested size: 217.66211pt x 152.36255pt.
  [28
 
- <./figures/full_vaccination_no_npi_compartments.png> <./figures/full_vaccination_no_npi_variants.png>]
-<./figures/full_vaccination_initial_npi_compartments.png, id=298, 650.43pt x 361.35pt>
-File: ./figures/full_vaccination_initial_npi_compartments.png Graphic file (type png)
-<use ./figures/full_vaccination_initial_npi_compartments.png>
-Package pdftex.def Info: ./figures/full_vaccination_initial_npi_compartments.png  used on input line 623.
+ <./figures/full_vaccination_initial_npi_compartments.png> <./figures/full_vaccination_initial_npi_variants.png>]
+<./figures/delayed_vaccination_compartments.png, id=302, 650.43pt x 361.35pt>
+File: ./figures/delayed_vaccination_compartments.png Graphic file (type png)
+<use ./figures/delayed_vaccination_compartments.png>
+Package pdftex.def Info: ./figures/delayed_vaccination_compartments.png  used on input line 639.
 (pdftex.def)             Requested size: 217.66211pt x 120.92204pt.
-<./figures/full_vaccination_initial_npi_variants.png, id=299, 722.7pt x 505.89pt>
-File: ./figures/full_vaccination_initial_npi_variants.png Graphic file (type png)
-<use ./figures/full_vaccination_initial_npi_variants.png>
-Package pdftex.def Info: ./figures/full_vaccination_initial_npi_variants.png  used on input line 623.
+<./figures/delayed_vaccination_variants.png, id=303, 722.7pt x 505.89pt>
+File: ./figures/delayed_vaccination_variants.png Graphic file (type png)
+<use ./figures/delayed_vaccination_variants.png>
+Package pdftex.def Info: ./figures/delayed_vaccination_variants.png  used on input line 639.
 (pdftex.def)             Requested size: 217.66211pt x 152.36255pt.
  [29
 
- <./figures/full_vaccination_initial_npi_compartments.png> <./figures/full_vaccination_initial_npi_variants.png>]
-<./figures/delayed_vaccination_compartments.png, id=309, 650.43pt x 361.35pt>
-File: ./figures/delayed_vaccination_compartments.png Graphic file (type png)
-<use ./figures/delayed_vaccination_compartments.png>
-Package pdftex.def Info: ./figures/delayed_vaccination_compartments.png  used on input line 636.
+ <./figures/delayed_vaccination_compartments.png> <./figures/delayed_vaccination_variants.png>]
+<./figures/sac_2d_compartments.png, id=313, 650.43pt x 361.35pt>
+File: ./figures/sac_2d_compartments.png Graphic file (type png)
+<use ./figures/sac_2d_compartments.png>
+Package pdftex.def Info: ./figures/sac_2d_compartments.png  used on input line 653.
 (pdftex.def)             Requested size: 217.66211pt x 120.92204pt.
-<./figures/delayed_vaccination_variants.png, id=310, 722.7pt x 505.89pt>
-File: ./figures/delayed_vaccination_variants.png Graphic file (type png)
-<use ./figures/delayed_vaccination_variants.png>
-Package pdftex.def Info: ./figures/delayed_vaccination_variants.png  used on input line 636.
+<./figures/sac_2d_variants.png, id=314, 722.7pt x 505.89pt>
+File: ./figures/sac_2d_variants.png Graphic file (type png)
+<use ./figures/sac_2d_variants.png>
+Package pdftex.def Info: ./figures/sac_2d_variants.png  used on input line 653.
 (pdftex.def)             Requested size: 217.66211pt x 152.36255pt.
  [30
 
- <./figures/delayed_vaccination_compartments.png> <./figures/delayed_vaccination_variants.png>]
-<./figures/sac_2d_compartments.png, id=320, 650.43pt x 361.35pt>
-File: ./figures/sac_2d_compartments.png Graphic file (type png)
-<use ./figures/sac_2d_compartments.png>
-Package pdftex.def Info: ./figures/sac_2d_compartments.png  used on input line 650.
-(pdftex.def)             Requested size: 217.66211pt x 120.92204pt.
-<./figures/sac_2d_variants.png, id=321, 722.7pt x 505.89pt>
-File: ./figures/sac_2d_variants.png Graphic file (type png)
-<use ./figures/sac_2d_variants.png>
-Package pdftex.def Info: ./figures/sac_2d_variants.png  used on input line 650.
-(pdftex.def)             Requested size: 217.66211pt x 152.36255pt.
- [31
-
- <./figures/sac_2d_compartments.png> <./figures/sac_2d_variants.png>] [32
+ <./figures/sac_2d_compartments.png> <./figures/sac_2d_variants.png>] [31
 
 ]
 \tf@nav=\write7
@@ -1689,18 +1691,18 @@ Package logreq Info: Writing requests to 'slides.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50850 strings out of 467538
- 1183392 string characters out of 5419551
+ 50846 strings out of 467538
+ 1183357 string characters out of 5419551
  2195599 words of memory out of 5000000
- 78728 multiletter control sequences out of 15000+600000
+ 78726 multiletter control sequences out of 15000+600000
  727569 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,13n,123p,2102b,5183s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on slides.pdf (32 pages, 1019795 bytes).
+Output written on slides.pdf (31 pages, 1018023 bytes).
 PDF statistics:
- 412 PDF objects out of 1000 (max. 8388607)
- 285 compressed objects within 3 object streams
- 79 named destinations out of 1000 (max. 500000)
+ 404 PDF objects out of 1000 (max. 8388607)
+ 279 compressed objects within 3 object streams
+ 77 named destinations out of 1000 (max. 500000)
  193 words of extra memory for PDF output out of 10000 (max. 10000000)
 

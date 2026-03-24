@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber slides"] 1774344037.15108 "slides.bcf" "slides.bbl" "slides" 1774347370.95415 0
-  "slides.bcf" 1774347370.86398 133544 bc56360d07b77547d0873b6e8d3cc8bf "pdflatex"
+["biber slides"] 1774344037.15108 "slides.bcf" "slides.bbl" "slides" 1774347640.63567 0
+  "slides.bcf" 1774347640.54498 133544 bc56360d07b77547d0873b6e8d3cc8bf "pdflatex"
   (generated)
   "slides.bbl"
   "slides.blg"
   (rewritten before read)
-["pdflatex"] 1774347368.10749 "slides.tex" "slides.pdf" "slides" 1774347370.95443 0
+["pdflatex"] 1774347637.65047 "slides.tex" "slides.pdf" "slides" 1774347640.63604 0
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -383,13 +383,13 @@
   "figures/sac_2d_phase_controls.png" 1774322874.25441 46913 e938d1b5980b2a63eddaaec31569702b ""
   "figures/sac_2d_variants.png" 1774322874.71441 77548 f99b523482f8a8dc9d62fe890d112ee3 ""
   "loadslides.tex" 1774317703.62777 3289 8e0f6ed140ae54fc7228a41cb0e03e5b ""
-  "slides.aux" 1774347370.86098 8604 f60c697f4781b9b55173ae2593a7096c "pdflatex"
+  "slides.aux" 1774347640.54198 8476 cd83849a285319de8cd087dba617733c "pdflatex"
   "slides.bbl" 1774344037.853 466 76d65a242ec496c9b4361af646ff12cb "biber slides"
-  "slides.nav" 1774347370.86498 4789 eee5ca6a4331cd87833c4a37bb4869f9 "pdflatex"
-  "slides.out" 1774347370.86193 1663 0e1e94e68c458e26ced7e87966ea5d86 "pdflatex"
-  "slides.run.xml" 1774347370.86498 2475 595bdd7a02f15d42b25874d933f14267 "pdflatex"
-  "slides.tex" 1774347366.33098 17180 6312da752ffe74ae68cca563ad37167f ""
-  "slides.toc" 1774347370.86498 1046 de8688bb801312be15e6d7420e79ea80 "pdflatex"
+  "slides.nav" 1774347640.54598 4697 29e64ff615b2ea46ef1d28d77037cc66 "pdflatex"
+  "slides.out" 1774347640.54295 1663 0e1e94e68c458e26ced7e87966ea5d86 "pdflatex"
+  "slides.run.xml" 1774347640.54598 2475 595bdd7a02f15d42b25874d933f14267 "pdflatex"
+  "slides.tex" 1774347637.13598 17336 238bbba8a017688cdd72ce54064ad016 ""
+  "slides.toc" 1774347640.54598 1046 fe565c63111dba520ee2774f088cfc45 "pdflatex"
   "styles/beamercolorthemeelegant.sty" 1774320525.99724 3710 e0bde471b46cafb5f2c0903c47bc869a ""
   "styles/beamerfontthemeelegant.sty" 1774307644 988 66866602cbc9a3f68add9d224432215f ""
   "styles/beamerinnerthemeelegant.sty" 1774320128.2859 5486 505df11862942371448f3ec8e169e0db ""

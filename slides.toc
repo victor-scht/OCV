@@ -5,4 +5,4 @@
 \beamer@subsectionintoc {2}{3}{Differential system\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 7}{10}{1}{2}
 \beamer@subsectionintoc {2}{4}{Mutation and reinfection\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 8}{11}{1}{2}
 \beamer@sectionintoc {3}{Optimal control\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 9}{12}{1}{3}
-\beamer@sectionintoc {4}{Results and interpretation\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 14}{18}{1}{4}
+\beamer@sectionintoc {4}{Results and interpretation\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 13}{17}{1}{4}

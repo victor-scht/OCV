@@ -383,33 +383,36 @@ David Houri
 	\]
 \end{frame}
 
-\begin{frame}{Switching functions}
-	Differentiating the Hamiltonian with respect to controls gives:
-	\[
-		\Lambda_n(t)=\frac{\partial H}{\partial n}=p_V-p_S
-	\]
-
-	and
-	\begin{align*}
-		\Lambda_\eta(t)=\frac{\partial H}{\partial \eta}
-		 & =
-		-p_S\big((\beta\otimes 1)\cdot\!\cdot I(t)\big)S(t)
-		-p_V\big((\beta\otimes \omega)\cdot\!\cdot I(t)\big)V(t) \\
-		 & \quad
-		-p_R\cdot\!\cdot\big(\xi^{(3,4,1,2)}I(t)\circ R(t)\big)  \\
-		 & \quad
-		+p_I\cdot\!\cdot
-		\Big(
-		((\beta\otimes 1)\circ I(t))S
-		+
-		((\beta\otimes \omega)\circ I(t))V
-		+
-		\xi R(t)\circ I(t)
-		\Big).
-	\end{align*}
-\end{frame}
+% \begin{frame}{Switching functions}
+% 	Differentiating the Hamiltonian with respect to controls gives:
+% 	\[
+% 		\Lambda_n(t)=\frac{\partial H}{\partial n}=p_V-p_S
+% 	\]
+%
+% 	and
+% 	\begin{align*}
+% 		\Lambda_\eta(t)=\frac{\partial H}{\partial \eta}
+% 		 & =
+% 		-p_S\big((\beta\otimes 1)\cdot\!\cdot I(t)\big)S(t)
+% 		-p_V\big((\beta\otimes \omega)\cdot\!\cdot I(t)\big)V(t) \\
+% 		 & \quad
+% 		-p_R\cdot\!\cdot\big(\xi^{(3,4,1,2)}I(t)\circ R(t)\big)  \\
+% 		 & \quad
+% 		+p_I\cdot\!\cdot
+% 		\Big(
+% 		((\beta\otimes 1)\circ I(t))S
+% 		+
+% 		((\beta\otimes \omega)\circ I(t))V
+% 		+
+% 		\xi R(t)\circ I(t)
+% 		\Big).
+% 	\end{align*}
+% \end{frame}
 
 \begin{frame}{Bang-bang structure and control square}
+	Differentiating the Hamiltonian with respect to controls suggests a
+	\alert{\textbf{bang-bang control}}.
+
 	A necessary optimality condition is:
 	\[
 		u^*(t)\in
