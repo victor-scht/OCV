@@ -199,8 +199,6 @@ David Houri
 				      \item \(\eta=1\): no restriction
 				      \item smaller \(\eta\): stronger restrictions
 			      \end{itemize}
-			\item \(\beta_i\): transmission rate of transmissibility class \(i\)
-			\item \(\omega_j\): vaccine resistance of resistance class \(j\)
 			\item \(\mu\): fatality rate
 			\item \(\gamma\): recovery rate
 			\item \(\xi_{ijkl}\): reinfection tensor
@@ -241,17 +239,38 @@ David Houri
 	\end{align*}
 \end{frame}
 
-\begin{frame}{Entrywise interpretation for \(I_{ij}\)}
-	For one variant \((i,j)\), the infected dynamics combine:
-	\begin{itemize}
-		\item infections from susceptibles,
-		\item infections from vaccinated people,
-		\item deaths and recoveries,
-		\item reinfection from recovered people,
-		\item mutation inflow/outflow from neighboring variants.
-	\end{itemize}
+% \begin{frame}{Entrywise interpretation for \(I_{ij}\)}
+% 	For one variant \((i,j)\), the infected dynamics combine:
+% 	\begin{itemize}
+% 		\item infections from susceptibles,
+% 		\item infections from vaccinated people,
+% 		\item deaths and recoveries,
+% 		\item reinfection from recovered people,
+% 		\item mutation inflow/outflow from neighboring variants.
+% 	\end{itemize}
+%
+% 	\vspace{0.4em}
+% 	Schematically:
+% 	\[
+% 		\frac{dI_{ij}}{dt}
+% 		=
+% 		\underbrace{\eta \beta_i I_{ij} S}_{S\to I_{ij}}
+% 		+
+% 		\underbrace{\eta \beta_i \omega_j I_{ij} V}_{V\to I_{ij}}
+% 		-
+% 		\underbrace{(\mu+\gamma)I_{ij}}_{\text{exit}}
+% 		+
+% 		\underbrace{\text{reinfection}}_{\xi}
+% 		+
+% 		\underbrace{\text{mutation}}_{P,\Psi}
+% 	\]
+% \end{frame}
 
-	\vspace{0.4em}
+%------------------------------------------------
+\subsection{Mutation and reinfection}
+
+\begin{frame}{Gaussian mutation operator}
+
 	Schematically:
 	\[
 		\frac{dI_{ij}}{dt}
@@ -266,12 +285,7 @@ David Houri
 		+
 		\underbrace{\text{mutation}}_{P,\Psi}
 	\]
-\end{frame}
 
-%------------------------------------------------
-\subsection{Mutation and reinfection}
-
-\begin{frame}{Gaussian mutation operator}
 	Mutation is modeled as a Gaussian blur on the matrix \(I\).
 
 	\[
@@ -286,33 +300,28 @@ David Houri
 		G_\sigma(i-k)\,G_\sigma(j-l)\,I_{kl}.
 	\]
 
-	\begin{itemize}
-		\item small spillover to nearby variants,
-		\item larger \(\sigma\) means more mutation spread,
-		\item cut-off \(\Psi\) removes unrealistically tiny populations.
-	\end{itemize}
 \end{frame}
 
-\begin{frame}{Reinfection tensor}
-	Recovered individuals from variant \((k,l)\) may be reinfected by \((i,j)\) through
-	\[
-		\xi_{ijkl}.
-	\]
-
-	The paper imposes
-	\[
-		\xi_{ijij}=0
-	\]
-	and chooses
-	\[
-		\xi_{ijkl}=\frac{C}{M}\,[\omega_l-\omega_j]_+.
-	\]
-
-	\begin{block}{Interpretation}
-		Reinfection is easier when the new variant is more vaccine-resistant / immune-escaping
-		than the one previously encountered.
-	\end{block}
-\end{frame}
+% \begin{frame}{Reinfection tensor}
+% 	Recovered individuals from variant \((k,l)\) may be reinfected by \((i,j)\) through
+% 	\[
+% 		\xi_{ijkl}.
+% 	\]
+%
+% 	The paper imposes
+% 	\[
+% 		\xi_{ijij}=0
+% 	\]
+% 	and chooses
+% 	\[
+% 		\xi_{ijkl}=\frac{C}{M}\,[\omega_l-\omega_j]_+.
+% 	\]
+%
+% 	\begin{block}{Interpretation}
+% 		Reinfection is easier when the new variant is more vaccine-resistant / immune-escaping
+% 		than the one previously encountered.
+% 	\end{block}
+% \end{frame}
 
 %------------------------------------------------
 \section{Scenarios}
