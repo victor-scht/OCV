@@ -1,5 +1,5 @@
 \beamer@sectionintoc {1}{Introduction\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 4}{5}{1}{1}
-\beamer@sectionintoc {2}{Compartments\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 5}{7}{1}{2}
+\beamer@sectionintoc {2}{Compartments model\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 5}{7}{1}{2}
 \beamer@subsectionintoc {2}{1}{Variant space and compartments\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 5}{8}{1}{2}
 \beamer@subsectionintoc {2}{2}{Compartment model\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 6}{9}{1}{2}
 \beamer@subsectionintoc {2}{3}{Differential system\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 7}{10}{1}{2}
