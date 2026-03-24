@@ -45,7 +45,7 @@ David Houri
 	\tableofcontents[part=1]
 \end{frame}
 
-\begin{frame}{Part II: A Reinforcement Learning Approach}
+\begin{frame}{Part II: Other Approaches}
 	\tableofcontents[part=2]
 \end{frame}
 
@@ -286,7 +286,7 @@ David Houri
 		\underbrace{\text{mutation}}_{P,\Psi}
 	\]
 
-	Mutation is modeled as a Gaussian blur on the matrix \(I\) with a cutoff (to prevent the emergence of dangerous variants at the very beginning).
+	Mutation is modeled as a Gaussian blur on the matrix \(I\) with a cutoff $\Psi$ (to prevent the emergence of dangerous variants at the very beginning).
 
 	\[
 		G_\sigma(t)=\frac{1}{\sqrt{2\pi}\sigma}\exp\!\left(-\frac{t^2}{2\sigma^2}\right)
@@ -353,34 +353,46 @@ David Houri
 \end{frame}
 
 \begin{frame}{Hamiltonian}
-	State:
-	\[
-		x(t)=\bigl(S(t),I(t),R(t),V(t)\bigr),
-		\qquad
-		p(t)=\bigl(p_S(t),p_I(t),p_R(t),p_V(t)\bigr).
-	\]
+	\begin{block}{
+			State:
+		}
+		\[
+			x(t)=\bigl(S(t),I(t),R(t),V(t)\bigr),
+			\qquad
+			p(t)=\bigl(p_S(t),p_I(t),p_R(t),p_V(t)\bigr).
+		\]
 
-	Hamiltonian:
-	\[
-		H(x,u,p)
-		=
-		\mu I\cdot\!\cdot(1\otimes 1)
-		+
-		p_S\frac{\partial S}{\partial t}
-		+
-		p_I\cdot\!\cdot\frac{\partial I}{\partial t}
-		+
-		p_R\cdot\!\cdot\frac{\partial R}{\partial t}
-		+
-		p_V\frac{\partial V}{\partial t}.
-	\]
+	\end{block}
 
-	Pontryagin condition:
-	\[
-		\frac{\partial p}{\partial t}(t)=-\nabla_x H(x(t),u(t),p(t)),
-		\qquad
-		p(T)=0.
-	\]
+	\begin{block}{
+			Hamiltonian:
+		}
+		\[
+			H(x,u,p)
+			=
+			\mu I\cdot\!\cdot(1\otimes 1)
+			+
+			p_S\frac{\partial S}{\partial t}
+			+
+			p_I\cdot\!\cdot\frac{\partial I}{\partial t}
+			+
+			p_R\cdot\!\cdot\frac{\partial R}{\partial t}
+			+
+			p_V\frac{\partial V}{\partial t}.
+		\]
+
+	\end{block}
+
+	\begin{block}{
+			Pontryagin condition:
+		}
+		\[
+			\frac{\partial p}{\partial t}(t)=-\nabla_x H(x(t),u(t),p(t)),
+			\qquad
+			p(T)=0.
+		\]
+
+	\end{block}
 \end{frame}
 
 % \begin{frame}{Switching functions}
@@ -540,7 +552,51 @@ David Houri
 
 \section{Another way to optimize the bang-bang control}
 %--------------------------------------------------
-\begin{frame}{Optimal Control}
+\begin{frame}{A simple experiment}
+
+	\begin{columns}[T]
+		\column{0.4\textwidth}
+		\begin{itemize}
+			\item We want to know if vaccinating at the strongest rate is the best in the case with no NPI.
+
+			      \medskip
+
+			\item For aperiod of 10 days we replace the vaccination rate by 0.8.
+		\end{itemize}
+		\column{0.48\textwidth}
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=0.6\textwidth]{./figures/f1.png}
+			\end{center}
+			\begin{center}
+				\includegraphics[width=0.55\textwidth]{./figures/f2.png}
+			\end{center}
+			\caption{A simple experiment}\label{fig:}
+		\end{figure}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{The optimisation method}
+
+	\begin{columns}[T]
+		\column{0.4\textwidth}
+		If we can improve : we try ± 0,05 for the vaccintion rate
+		(with attention to the bounds) every 4 days
+
+		\medskip
+
+		We keep in memory the death toll and we apply the best modification.
+		\column{0.48\textwidth}
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=0.6\textwidth]{./figures/f3.png}
+			\end{center}
+			\begin{center}
+				\includegraphics[width=0.55\textwidth]{./figures/f4.png}
+			\end{center}
+			\caption{A simple experiment}\label{fig:}
+		\end{figure}
+	\end{columns}
 
 \end{frame}
 
@@ -632,17 +688,17 @@ David Houri
 \end{frame}
 
 %--------------------------------------------------
-\begin{frame}{Delayed Vaccination}
-	\begin{itemize}
-		\item Two waves
-		\item Highest resistance
-	\end{itemize}
-
-	\begin{center}
-		\includegraphics[width=0.45\linewidth]{./figures/delayed_vaccination_compartments.png}
-		\includegraphics[width=0.45\linewidth]{./figures/delayed_vaccination_variants.png}
-	\end{center}
-\end{frame}
+% \begin{frame}{Delayed Vaccination}
+% 	\begin{itemize}
+% 		\item Two waves
+% 		\item Highest resistance
+% 	\end{itemize}
+%
+% 	\begin{center}
+% 		\includegraphics[width=0.45\linewidth]{./figures/delayed_vaccination_compartments.png}
+% 		\includegraphics[width=0.45\linewidth]{./figures/delayed_vaccination_variants.png}
+% 	\end{center}
+% \end{frame}
 
 %--------------------------------------------------
 \begin{frame}{RL (SAC 2D) Results}
@@ -659,7 +715,7 @@ David Houri
 \end{frame}
 
 %--------------------------------------------------
-\begin{frame}{Key Insight}
+\begin{frame}{Interpretations}
 	\begin{itemize}
 		\item Strong static control $\Rightarrow$ strong evolution
 		\item Weak control $\Rightarrow$ large outbreak
