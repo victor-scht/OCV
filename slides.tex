@@ -286,19 +286,19 @@ David Houri
 		\underbrace{\text{mutation}}_{P,\Psi}
 	\]
 
-	Mutation is modeled as a Gaussian blur on the matrix \(I\).
+	Mutation is modeled as a Gaussian blur on the matrix \(I\) with a cutoff (to prevent the emergence of dangerous variant at the very beginning).
 
 	\[
 		G_\sigma(t)=\frac{1}{\sqrt{2\pi}\sigma}\exp\!\left(-\frac{t^2}{2\sigma^2}\right)
 	\]
 
-	For each cell \((i,j)\),
-	\[
-		(P\cdot\!\cdot I)_{ij}
-		=
-		\sum_{k=1}^{N}\sum_{l=1}^{M}
-		G_\sigma(i-k)\,G_\sigma(j-l)\,I_{kl}.
-	\]
+	% For each cell \((i,j)\),
+	% \[
+	% 	(P\cdot\!\cdot I)_{ij}
+	% 	=
+	% 	\sum_{k=1}^{N}\sum_{l=1}^{M}
+	% 	G_\sigma(i-k)\,G_\sigma(j-l)\,I_{kl}.
+	% \]
 
 \end{frame}
 
@@ -324,63 +324,7 @@ David Houri
 % \end{frame}
 
 %------------------------------------------------
-\section{Scenarios}
 
-\begin{frame}{Simulation scenarios}
-	Three scenarios are simulated:
-	\begin{enumerate}
-		\item low infection, no NPI;
-		\item high infection, no NPI;
-		\item high infection, with NPI initially.
-	\end{enumerate}
-
-	Typical parameters:
-	\[
-		N=30,\qquad M=40,\qquad R_0^{\max}=15,\qquad \gamma=0.09,\qquad \mu=0.02.
-	\]
-
-	\[
-		n=0.006\quad \text{(0.6\% of the population vaccinated per day)}
-	\]
-
-	\begin{block}{Qualitative result}
-		Vaccination works in low prevalence, and in high prevalence only if NPIs are maintained at least initially.
-	\end{block}
-\end{frame}
-
-\begin{frame}{Main simulation insight}
-	\begin{itemize}
-		\item High infection + vaccination + no NPI:
-
-		      % \medskip
-
-		      \begin{itemize}
-			      \item the original strain is reduced,
-
-			            \medskip
-
-			      \item but resistant variants are selected,
-
-			            \medskip
-
-			      \item a second peak appears.
-		      \end{itemize}
-
-		      \medskip
-
-		\item High infection + vaccination + initial NPI:
-
-		      % \medskip
-
-		      \begin{itemize}
-			      \item variants do not get enough time to emerge,
-
-			            \medskip
-
-			      \item pandemic is controlled.
-		      \end{itemize}
-	\end{itemize}
-\end{frame}
 
 %------------------------------------------------
 \section{Optimal control}
@@ -501,6 +445,62 @@ David Houri
 
 %------------------------------------------------
 \section{Results and interpretation}
+
+\begin{frame}{Simulation scenarios}
+	Three scenarios are simulated:
+	\begin{enumerate}
+		\item low infection, no NPI;
+		\item high infection, no NPI;
+		\item high infection, with NPI initially.
+	\end{enumerate}
+
+	Typical parameters:
+	\[
+		N=30,\qquad M=40,\qquad R_0^{\max}=15,\qquad \gamma=0.09,\qquad \mu=0.02.
+	\]
+
+	\[
+		n=0.006\quad \text{(0.6\% of the population vaccinated per day)}
+	\]
+
+	\begin{block}{Qualitative result}
+		Vaccination works in low prevalence, and in high prevalence only if NPIs are maintained at least initially.
+	\end{block}
+\end{frame}
+
+\begin{frame}{Main simulation insight}
+	\begin{itemize}
+		\item High infection + vaccination + no NPI:
+
+		      % \medskip
+
+		      \begin{itemize}
+			      \item the original strain is reduced,
+
+			            \medskip
+
+			      \item but resistant variants are selected,
+
+			            \medskip
+
+			      \item a second peak appears.
+		      \end{itemize}
+
+		      \medskip
+
+		\item High infection + vaccination + initial NPI:
+
+		      % \medskip
+
+		      \begin{itemize}
+			      \item variants do not get enough time to emerge,
+
+			            \medskip
+
+			      \item pandemic is controlled.
+		      \end{itemize}
+	\end{itemize}
+\end{frame}
 
 \begin{frame}{Counterintuitive result}
 	\begin{itemize}
